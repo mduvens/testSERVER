@@ -1,0 +1,10 @@
+
+@import "config";
+
+@import "../siteboot/node_modules/bootstrap/scss/bootstrap";
+
+html[data-theme='main']{
+    --bgNav: #444444;
+    --bg:#000000;
+    --themeColor:#3282cd;
+}

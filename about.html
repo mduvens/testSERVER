@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="main">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/a9082643a6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <title>Street Workout</title>
+    <style>
+        html,body {
+            /* margin: 0 auto; */
+            background: var(--bg);
+            overflow-x: hidden;
+            font-family: 'Muli',sans-serif !important;
+        }
+
+        .navbar {
+            background: var(--bg);
+            text-align: center;  
+        }
+
+        .navbar navbar-nav {
+            float: right;
+        }
+
+        .nav-link {
+            color: white;
+            font-size: 2em;
+            
+        }
+
+        .nav-link{
+            margin-inline: 1vw;
+        }
+
+       
+        .carousel-item{
+            height: 50vh;
+            background-size: cover;
+                    
+        }
+        
+        .workouts{
+            width: 20vh;
+            margin-inline: 100px;
+        }
+        @media(min-width: 992px){
+            #pushupsManBG{
+                background-position: center;
+                
+            }
+        }
+        #jb1{
+            width: 100%;
+
+            background-image: url('img/calisthenicsPark2.jpg');
+            background-size: cover;
+            background-position: center;
+            text-shadow: 2px 2px 2px black;
+            text-align: center;
+      
+        }
+        @media(min-width:992px){
+            #jb1{
+                background-attachment: fixed;
+
+            }
+
+        }
+        .display-4{
+            text-shadow: 2px 2px 2px black;
+        } 
+             
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+ 
+       
+                <nav class="navbar navbar-expand-md navbar-dark ">
+                    <span class="navbar-brand mb-0 h1" id="b2750">
+                        <a href="/app" class="text-white text-decoration-none" style="font-size: 1.5em;"><img src="img/muscleSVG.png" width="50" height="50" class="d-inline-block align-top" alt="">Athletik</a>
+                
+                    </span>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-black" id="navbarNavDropdown">
+                        <div class="navbar-nav text-center ml-auto">
+                            <a class="nav-item nav-link " href="/" id="navlinkHome">Home<span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link " href="/app" id="navlinkApp">App</a>
+
+                            <a class="nav-item nav-link " href="/workouts" id="navlinkWorkouts">Workouts</a>
+                            <a class="nav-item nav-link " href="#" id="navlinkAboutus">About us</a>
+                        </div>
+                    </div>
+                </nav>
+    <main class="animate__animated animate__fadeIn">
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active " id="pushupsManBG"style="background-image: url(img/manworkingout1.jpg) ;">
+                    <h1 class="display-4 text-center text-white mt-5 animate__animated animate__bounceInDown animate__slow" >Home Workouts</h1>
+                    <div class="carousel-caption">
+                        <a class="btn btn-outline-white btn-lg animate__animated animate__bounceInUp animate__slow" href="/workouts">Get started</a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(img/cleanpressguy.jpg);">
+                    <h1 class="display-4 text-center text-white mt-5 animate__animated animate__bounceInDown animate__slow" >Weight Training</h1>
+                    <div class="carousel-caption">
+                    <h3 class=" text-center text-white mt-5 animate__animated animate__bounceInUp animate__slow" >Download the app</h3>
+                    <button class="btn btn-primary animate__animated animate__zoomIn animate__slower mt-2"><i class="fab fa-apple"></i> App Store</button>
+                <button class="btn btn-success animate__animated animate__zoomIn animate__slower mt-2"><i class="fab fa-android"></i> Play Store</button>
+                        <!-- <a class="btn btn-outline-white btn-lg" href="/app">Get started</a> -->
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(img/horizonwoman.jpg);">
+                    <h1 class="display-4 text-center text-white mt-5 animate__animated animate__fadeIn animate__slow" >Whenever & wherever</h1>
+                    <div class="carousel-caption">
+                        <a class="btn btn-outline-white btn-lg animate__animated animate__fadeIn animate__slower" href="/app">Get started</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="container-fluid">
+            <div class="row padding text-center">
+                <div class="col-12 mt-5 mb-3">
+                   <h1 class="display-4 mt-2 mb-4 animate__animated animate__bounceIn ">Follow us on Social Media</h1>
+                   <div class="mb-5 ">
+                    <a href="http://www.instagram.com" target="_blank" class="mx-4 "><img class="animate__animated animate__bounceIn animate__slower" src="img/instagramicon.svg" alt="Instagram" style="width: 8vh;"></a>
+                    <a href="http://www.facebook.com" target="_blank" class="mx-4 "><img class="animate__animated animate__bounceIn animate__slower" src="img/fbicon.svg" alt="Facebook" style="width: 8vh;"></a>
+                    <a href="http://www.twitter.com" target="_blank" class="mx-4 "><img class="animate__animated animate__bounceIn animate__slower"src="img/twittericon.svg" alt="Facebook" style="width: 8vh;"></a>
+                   </div>
+                </div>
+            </div>
+        </div>  
+        <div class="container-fluid padding bg-white ">
+            <!-- <hr class="mb-5">       -->
+            <div class="row text-center padding ">
+                <div class="col-xs-6 my-3 col-md-4 shadow-sm p-4 rounded">
+                    <img src="img/casa.svg" alt="gymhome" class="w-25">
+    
+                    <h1 class="display-3 wow bounceIn" style="font-size: 2.5em;" ><b> Exercise at home</b> </h1>
+                   
+                </div>
+                <div class="col-xs-6 my-3 col-md-4 shadow-sm p-4 rounded">
+                    <img src="img/haltere.svg" alt="gym" class="w-25 ">
+                    <h1 class="display-3 wow bounceIn" style="font-size: 2.5em;"><b>Workout Plans </b> </h1>
+                </div>
+                <div class="col-xs-12 my-3 col-md-4  shadow-sm p-5 rounded">
+                    <img src="img/healthcolor.svg" alt="fitness" class="w-25">
+                    <h1 class="display-3 wow bounceIn " style="font-size: 2.5em;"><b>Healthy Exercise</b></h1>
+                </div>
+            <!-- <hr class="mb-5"> -->
+            </div>
+        </div>
+     
+        <div class="jumbotron jumbotron-fluid text-white"  id="jb1">
+            <div class="container-fluid  ">
+                <div class="form-row ">               
+                    <div class="col-12">  
+                        <h1 class="display-4 wow bounce">Workout with us!</h1>
+                        <p class="lead wow fadeIn">We have weekly group workouts!</p>
+                        <hr class="my-4 d-inline-block">
+                        <p class="wow bounceInLeft">Outside or at home, do it with some of the best.</p>
+                        <a class="btn btn-outline-white btn-md wow bounceInRight" href="/app" >Learn more</a></div>
+                </div>
+            </div>
+          </div>
+         <div class="container-fluid">
+             <div class="row padding text-center">
+                 <div class="col-12 mt-3">
+                    <h1 class="wow fadeInUp">Have any questions ? </h1>
+                    <a href="mailto:athletik@gmail.com?Subject=Hello,%20I%20Would%20Love%20To%20Train%20With%20You!"
+                    target="_blank" class="btn btn-primary mt-4 mb-5 wow fadeInUp">Contact Us</a>
+                 </div>
+             </div>
+         </div>   
+         
+    
+           
+        <footer>
+            <div class="container-fluid  ">
+                <div class="row text-center text-black">
+                    <div class="col-12">
+                        <p> &copy; Copyright 2020 Athletik</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>   
+   
+  
+
+
+
+
+   <script src="js/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

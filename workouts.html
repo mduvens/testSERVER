@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="main">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Acme&family=Permanent+Marker&display=swap" rel="stylesheet">
+     -->
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <title>Street Workout</title>
+    <style>
+        html,
+        body {
+            /* margin: 0 auto; */
+            background-image: url('img/workoutview.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-x: hidden;
+            font-family: 'Muli', sans-serif !important;
+
+        }
+
+
+        .navbar {
+            background: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .navbar navbar-nav {
+            float: right;
+        }
+
+        .nav-link {
+            color: white;
+            font-size: 2em;
+
+        }
+
+        .nav-link {
+            margin-inline: 1vw;
+        }
+
+
+
+        .card-body {
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+
+
+
+        .btn > btn-block {
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 5vh;
+
+        }
+
+        .card-title {
+            font-size: 2em;
+
+        }
+
+        .workBG {
+            height: 40vh;
+            background-position: center;
+            background-size: auto;
+        }
+
+        #work1 {
+            background-image: url('/img/fullbodyBG.jpg');
+
+        }
+
+        #work2 {
+            background-image: url('/img/pullBG.jpg');
+
+        }
+
+        #work3 {
+            background-image: url('/img/pushBG.jpg');
+
+        }
+
+        #work4 {
+            background-image: url('/img/LEGSbg.jpg');
+        }
+
+        .list-group {
+            font-weight: 700;
+            font-size: 2.5vh;
+        }
+      
+        
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+
+    <nav class="navbar navbar-expand-md navbar-dark ">
+        <span class="navbar-brand mb-0 h1" id="b2750">
+            <a href="/app" class="text-white text-decoration-none" style="font-size: 1.5em;"><img
+                    src="img/muscleSVG.png" width="50" height="50" class="d-inline-block align-top" alt="">Athletik</a>
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-black " id="navbarNavDropdown">
+            <div class="navbar-nav text-center ml-auto">
+                <a class="nav-item nav-link  " href="/" id="navlinkHome">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link " href="/app" id="navlinkApp">App</a>
+
+                <a class="nav-item nav-link " href="#" id="navlinkWorkouts">Workouts</a>
+                <a class="nav-item nav-link " href="/about" id="navlinkAboutus">About us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="accordion " id="accordion">
+
+        <div class="card bg-black ">
+            <div class="card-header bg-black" id="headingZero">
+                <h2 class="display-4 mb-0">
+                    <a class="btn btn-block  btn-lg collapsed text-white animate__animated animate__fadeIn animate__slower" style="font-size:4vh; font-weight:600; "type="button" data-toggle="collapse"
+                        data-target="#collapseZero" aria-expanded="false" aria-controls="collapseZero">
+                        Home/Park Workouts 
+                    </a>
+                </h2>
+            </div>
+
+            <div id="collapseZero" class="collapse show" aria-labelledby="headinZero" data-parent="#accordion">
+                <div class="card-body ">
+                    <div class="form-row padding shadow-lg  rounded ">
+                        <div class="col-12 col-md-6 workBG position-static" id="work1">
+                            <div class="card  mt-5 border-0 " style="background: none;">
+                                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                <div class="card-body ">
+                                    <h5 class="card-title text-white mt-lg-5 animate__animated animate__backInLeft">Full Body</h5>
+
+                                </div>
+                                
+                            </div>
+                            <button class="btn stretched-link" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+
+                        </button>
+                        </div>
+
+                        <div class="col-12 col-md-6 workBG" id="work2">
+                            <div class="card   mt-5 border-0 align-items-center " style="background: none;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white mt-lg-5 animate__animated animate__backInRight">Pull </h5>
+
+                                </div>
+                               
+                            </div>
+                            <button class="btn stretched-link" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+
+                        </button>
+                        </div>
+                        <div class="col-12 col-md-6 workBG  " id="work3">
+                            <div class="card  mt-5 border-0 align-items-center " style="background: none;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white mt-lg-5 animate__animated animate__backInLeft">Push </h5>
+
+                                </div>
+                                
+                            </div>
+                            <button class="btn stretched-link " type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        </button>
+                        </div>
+                        <div class="col-12 col-md-6 workBG" id="work4">
+                            <div class="card  mt-5 border-0 align-items-center " style="background: none;">
+                                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                <div class="card-body">
+                                    <h5 class="card-title mt-lg-5 text-white animate__animated animate__backInRight">Legs </h5>
+
+                                </div>
+                                
+                            </div>
+                            <button class="btn stretched-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                                </button>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                    <button class="btn btn-block btn-lg  collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Full Body
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="form-row padding text-center justify-content-center">
+                            <div class="col-12 col-md-4">
+                                <img src="img/fullbody1.jpg" alt="pushmuscles" class="w-50 mt-1">
+                            </div>
+                        </div>
+                        <div class="form-row padding text-center justify-content-center mt-5">
+                            <div class="col-12 col-md-4">
+                                <p>
+                                    <a class="btn btn-success" data-toggle="collapse" href="#collapsePull" role="button"
+                                        aria-expanded="false" aria-controls="collapsePull">
+                                        Begginer
+                                    </a>
+                                </p>
+                                <div class="collapse" id="collapsePull">
+                                    <div class="card">
+                                        <div class="card-header bg-success">
+                                            <h1>3 Rounds</h1>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">10 Reps - Burpees </li>
+                                                <li class="list-group-item">20 Reps - High Knees </li>
+                                                <li class="list-group-item">10 Reps - Push Ups </li>
+                                                <li class="list-group-item">20 Reps - Split Lunges</li>
+                                                <li class="list-group-item">10 Reps - Squats </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mt-3 mt-lg-0">
+                                <p>
+                                    <a class="btn btn-warning" data-toggle="collapse" href="#collapsePull2"
+                                        role="button" aria-expanded="false" aria-controls="collapsePull2">
+                                        Intermediate
+                                    </a>
+                                </p>
+                                <div class="collapse" id="collapsePull2">
+                                    <div class="card">
+                                        <div class="card-header bg-warning">
+                                            <h1>4 Rounds</h1>
+
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">10 Reps - Spike Push Ups </li>
+                                                <li class="list-group-item">20 Reps - Pull Ups </li>
+                                                <li class="list-group-item">30 Reps - Push Ups </li>
+                                                <li class="list-group-item">40 Reps - Situps</li>
+                                                <li class="list-group-item">50 Reps - Squats </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4  mt-3 mt-lg-0">
+                                <p>
+                                    <a class="btn btn-danger" data-toggle="collapse" href="#collapsePull3" role="button"
+                                        aria-expanded="false" aria-controls="collapsePull3">
+                                        Athlete
+                                    </a>
+                                </p>
+                                <div class="collapse" id="collapsePull3">
+                                    <div class="card">
+                                        <div class="card-header bg-danger">
+                                            <h1>5 Rounds</h1>
+
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">10 Reps - Handstand Push Ups </li>
+                                                <li class="list-group-item">20 Reps - Pull Ups </li>
+                                                <li class="list-group-item">30 Reps - Push Ups </li>
+                                                <li class="list-group-item">40 Reps - Situps</li>
+                                                <li class="list-group-item">50 Reps - Squats </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header " id="headingOne">
+                <h2 class="display-4 mb-0">
+                    <button class="btn btn-block  btn-lg collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Pull
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="container-fluid">
+                    <div class="form-row padding text-center justify-content-center">
+                        <div class="col-12 col-md-4">
+                            <img src="img/pull2.jpg" alt="pushmuscles" class="w-50 mt-1">
+                        </div>
+                    </div>
+                    <div class="form-row padding text-center justify-content-center mt-5">
+                        <div class="col-12 col-md-4">
+                            <p>
+                                <a class="btn btn-success" data-toggle="collapse" href="#collapsePull" role="button"
+                                    aria-expanded="false" aria-controls="collapsePull">
+                                    Back Pump
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapsePull">
+                                <div class="card">
+                                    <div class="card-header bg-success">
+                                        <h1>3 Rounds</h1>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">10 Reps - Pull Ups </li>
+                                            <li class="list-group-item">20 Secs - Pull Up Hold</li>
+                                            <li class="list-group-item"> 5 Reps - Chin Ups</li>
+                                            <li class="list-group-item">20 Secs - Chin Up Hold</li>
+                                            <li class="list-group-item">20 Reps - Australian Pull Ups</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mt-lg-0">
+                            <p>
+                                <a class="btn btn-warning btn-md" data-toggle="collapse" href="#collapsePull2"
+                                    role="button" aria-expanded="false" aria-controls="collapsePull2">
+                                    Pull Dose
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapsePull2">
+                                <div class="card">
+                                    <div class="card-header bg-warning">
+                                        <h1>4 Rounds</h1>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">10 Reps - Pull Ups </li>
+                                            <li class="list-group-item"> 8 Reps - Negative Pull Ups </li>
+                                            <li class="list-group-item">20 Secs - Pull Up Hold</li>
+                                            <li class="list-group-item">10 Reps - Chin Ups</li>
+                                            <li class="list-group-item">30 Secs - Chin Up Hold</li>
+                                            <li class="list-group-item">20 Reps - Australian Pull Ups</li>
+                                            <li class="list-group-item">20 Reps - Australian Chin Ups</li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mt-lg-0">
+                            <p>
+                                <a class="btn btn-danger" data-toggle="collapse" href="#collapsePull3" role="button"
+                                    aria-expanded="false" aria-controls="collapsePull3">
+                                    Pull Up King
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapsePull3">
+                                <div class="card">
+                                    <div class="card-header bg-danger">
+                                        <h1>5 Rounds</h1>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">10 Reps - Pull Ups </li>
+                                            <li class="list-group-item">10 Reps - Pull Ups w/ 5sec Hold</li>
+                                            <li class="list-group-item"> 8 Reps - Negative Pull Ups </li>
+                                            <li class="list-group-item">20 Secs - Pull Up Hold</li>
+                                            <li class="list-group-item">10 Reps - Chin Ups</li>
+                                            <li class="list-group-item">30 Secs - Chin Up Hold</li>
+                                            <li class="list-group-item">20 Reps - Australian Pull Ups</li>
+                                            <li class="list-group-item">20 Reps - Australian Chin Ups</li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn  btn-block btn-lg  collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Push
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="container-fluid">
+                    <div class="form-row padding text-center justify-content-center">
+                        <div class="col-12 col-md-4">
+                            <img src="img/push1.jpg" alt="pushmuscles" class="w-50 mt-1">
+                        </div>
+                    </div>
+                    <div class="form-row padding text-center justify-content-center mt-5">
+                        <div class="col-12 col-md-4">
+                            <p>
+                                <a class="btn btn-success" data-toggle="collapse" href="#collapseP" role="button"
+                                    aria-expanded="false" aria-controls="collapseP">
+                                    Chest Pump
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapseP">
+                                <div class="card">
+                                    <div class="card-header bg-success">
+                                        <h1>3 Rounds</h1>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">10 Reps - Push Ups </li>
+                                            <li class="list-group-item">20 Secs - Push Up Hold</li>
+                                            <li class="list-group-item"> 5 Reps - Clap Push Ups</li>
+                                            <li class="list-group-item"> 8 Reps - Decline Push Ups</li>
+                                            <li class="list-group-item"> 8 Reps - Diamond Push Ups</li>
+                                            <li class="list-group-item">15 Reps - Incline Push Ups</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mt-lg-0">
+                            <p>
+                                <a class="btn btn-warning" data-toggle="collapse" href="#collapsePush2" role="button"
+                                    aria-expanded="false" aria-controls="collapsePush2">
+                                    Push Dose
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapsePush2">
+                                <div class="card">
+                                    <div class="card-header bg-warning">
+                                        <h1>4 Rounds</h1>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">10 Reps - Push Ups </li>
+                                            <li class="list-group-item"> 6 Reps - Pike Push Ups</li>
+                                            <li class="list-group-item"> 8 Reps - Diamond Push Ups</li>
+                                            <li class="list-group-item"> 5 Reps - Clap Push Ups</li>
+                                            <li class="list-group-item">10 Reps - Decline Push Ups</li>
+                                            <li class="list-group-item" id="nhokoo">15 Reps - Incline Push Ups</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mt-lg-0">
+                            <p>
+                                <a class="btn btn-danger" data-toggle="collapse" href="#collapsePush3" role="button"
+                                    aria-expanded="false" aria-controls="collapsePush3">
+                                    Push Up King
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapsePush3">
+                                <div class="card">
+                                    <div class="card-header bg-warning">
+                                        <h1>5 Rounds</h1>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">10 Reps - Push Ups</li>
+                                            <li class="list-group-item">20 Secs - Push Up Hold</li>
+                                            <li class="list-group-item">15 Reps - Explosive Incline Push Ups</li>
+                                            <li class="list-group-item">15 Reps - High Decline Push Ups</li>
+                                            <li class="list-group-item">20 Secs - Push Up Hold</li>
+                                            <li class="list-group-item"> 5 Reps - Clap Push Ups</li>
+                                            <li class="list-group-item"> 8 Reps - Diamond Push Ups</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-block btn-lg  collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Legs
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="container-fluid">
+                    <div class="form-row padding text-center justify-content-center">
+                        <div class="col-12 col-md-4">
+                            <img src="img/legs.jpg" alt="pushmuscles" class="w-50 mt-1">
+                        </div>
+                    </div>
+                    <div class="form-row padding text-center justify-content-center mt-5">
+                        <div class="col-12 col-md-4">
+                            <p>
+                                <a class="btn btn-success" data-toggle="collapse" href="#collapsePull" role="button"
+                                    aria-expanded="false" aria-controls="collapsePull">
+                                    Sunday Footballer
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapsePull">
+                                <div class="card">
+                                    <div class="card-header bg-success">
+                                        <h1>3 Rounds</h1>
+
+
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"> 8 Reps - Burpees </li>
+                                            <li class="list-group-item">25 Secs - Plank</li>
+                                            <li class="list-group-item">12 Reps - Squat Jumps 180</li>
+                                            <li class="list-group-item">10 Reps - Alternating Lunges</li>
+                                            <li class="list-group-item">15 Reps - Squats</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mt-lg-0">
+                            <p>
+                                <a class="btn btn-warning" data-toggle="collapse" href="#collapsePull2" role="button"
+                                    aria-expanded="false" aria-controls="collapsePull2">
+                                    Gym Bro
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapsePull2">
+                                <div class="card">
+                                    <div class="card-header bg-warning">
+                                        <h1>4 Rounds</h1>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush ">
+                                            <li class="list-group-item">50 Reps - Squats </li>
+                                            <li class="list-group-item">20 Reps - Jumping Squats </li>
+                                            <li class="list-group-item">50 Secs - Wallsit</li>
+                                            <li class="list-group-item">50 Reps - Sit Ups</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mt-lg-0">
+                            <p>
+                                <a class="btn btn-danger" data-toggle="collapse" href="#collapsePull3" role="button"
+                                    aria-expanded="false" aria-controls="collapsePull3">
+                                    Athlete
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapsePull3">
+                                <div class="card">
+                                    <div class="card-header bg-danger">
+                                        <h1>2 Rounds - Rest 90s </h1>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">50 Reps - Burpees </li>
+                                            <li class="list-group-item">50 Reps - Squats </li>
+                                            <li class="list-group-item">50 Secs - Wallsit</li>
+                                            <li class="list-group-item">50 Reps - Sit Ups</li>
+                                            <li class="list-group-item">40 Reps - Burpees </li>
+                                            <li class="list-group-item">40 Reps - Squats </li>
+                                            <li class="list-group-item">40 Secs - Wallsit</li>
+                                            <li class="list-group-item">40 Reps - Sit Ups</li>
+                                            <li class="list-group-item">30 Reps, 20 Reps, 10 Reps!</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <footer>
+        <div class="footer container-fluid padding bg-black mt-auto sticky-bottom">
+            <div class="row text-center text-white">
+                <div class="col-12">
+                    <p> 9111111111</p>
+                    <p> email@streetworkout.pt</p>
+                    <p> City, state,nhoko</p>
+
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
